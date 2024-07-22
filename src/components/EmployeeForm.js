@@ -28,29 +28,27 @@ class EmployeeForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input type="email" name="email" value={this.state.email} onChange={this.handleInputChange} />
-        </label>
-        <br />
-        <label>
-          Job Title:
-          <input type="text" name="title" value={this.state.title} onChange={this.handleInputChange} />
-        </label>
-        <br />
-        <label>
-          Department:
-          <input type="text" name="department" value={this.state.department} onChange={this.handleInputChange} />
-        </label>
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
+      <div className="employee-form-container">
+        <form className="employee-form" onSubmit={this.handleSubmit}>
+          <label>
+            Name:
+            <input type="text" name="name" value={this.state.name} onChange={this.handleInputChange} />
+          </label>
+          <label>
+            Email:
+            <input type="email" name="email" value={this.state.email} onChange={this.handleInputChange} />
+          </label>
+          <label>
+            Job Title:
+            <input type="text" name="title" value={this.state.title} onChange={this.handleInputChange} />
+          </label>
+          <label>
+            Department:
+            <input type="text" name="department" value={this.state.department} onChange={this.handleInputChange} />
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     );
   }
 }
