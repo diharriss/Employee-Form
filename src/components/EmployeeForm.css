@@ -1,5 +1,5 @@
 body {
-  background-color: green; /* Light Gray */
+  background-color: green; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,8 +8,8 @@ body {
 }
 
 .employee-form-container {
-  background-color: #fff; /* White */
-  border: 3px solid #000; /* Thick Black Border */
+  background-color: #fff; 
+  border: 3px solid #000; 
   padding: 20px;
   border-radius: 10px;
   max-width: 600px;
@@ -100,11 +100,11 @@ body {
 }
 
 .employee-detail tr:nth-child(even) {
-  background-color: #f2f2f2; /* Light Gray */
+  background-color: #f2f2f2; 
 }
 
 .employee-detail tr:hover {
-  background-color:#0077cc; /* Light Gray */
+  background-color:#0077cc; 
 }
 
 .employee-detail th {
